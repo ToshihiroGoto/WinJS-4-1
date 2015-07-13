@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link href="./css/ui-dark.css" rel="stylesheet" />
+    <script src="./js/base.min.js"></script>
+    <script src="./js/ui.min.js"></script>
+
+    <style>
+    	body{
+    		margin:0;
+    		padding:0;
+    	}
+    	.box{
+			margin:16px 16px 48px;
+    	}
+    </style>
+
+</head>
+<body>
+	<div class="box">
+		<div id="toggle" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title: 'Toggle', checked: true, onchange: toggle}">
+		</div>
+	</div>
+    <div class="box">
+        <p>Range(Slider)</p>
+        <input class="win-slider" type="range" value="25" max="100" step="5">
+    </div>
+
+	<script>
+		WinJS.UI.processAll();
+	</script>
+</body>
+</html>
